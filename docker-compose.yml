@@ -1,0 +1,16 @@
+version: '3'
+services:
+  server:
+    build:
+      context: ./reign-backend
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+  react-app:
+    build:
+      context: ./reign-frontend
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    depends_on:
+      - server

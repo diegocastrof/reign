@@ -10,7 +10,7 @@ import {
 
 import { NewsService } from './news.service';
 
-@Controller('news')
+@Controller('api/news')
 export class NewsController {
   constructor(private readonly newsService: NewsService) {}
 
