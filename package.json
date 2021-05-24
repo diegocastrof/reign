@@ -1,0 +1,16 @@
+{
+  "name": "riegn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm start --prefix reign-backend",
+    "client": "npm start --prefix reign-frontend",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sergio",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.1.0"
+  }
+}
